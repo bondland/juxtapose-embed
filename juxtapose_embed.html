@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juxtapose Embed</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .juxtapose-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-top: calc(788 / 1400 * 100%);
+        }
+
+        .juxtapose-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (min-width: 1200px) {
+            .juxtapose-container {
+                height: 788px;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="juxtapose-container">
+        <iframe frameborder="0" class="juxtapose" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=bf66e782-b21c-11ef-9397-d93975fe8866"></iframe>
+    </div>
+</body>
+</html>
